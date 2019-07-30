@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+@package        hubzero-idata
+@file           plugins/filesystem/idata/idata.xml
+@copyright      Copyright 2005-2015 HUBzero Foundation, LLC.
+@license        http://opensource.org/licenses/MIT MIT
+
+Copyright 2005-2019 HUBzero Foundation, LLC.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+HUBzero is a registered trademark of Purdue University.
+-->
+
+<extension version="1.0" type="plugin" group="filesystem">
+	<name>plg_filesystem_idata</name>
+	<author>HUBzero</author>
+	<copyright>Copyright 2005-2019 HUBzero Foundation, LLC.</copyright>
+	<license>http://opensource.org/licenses/MIT MIT</license>
+	<description>PLG_FILESYSTEM_IDATA_DESC</description>
+	<files>
+		<folder>idata</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_filesystem_idata.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="mount_path"
+					type="text"
+					label="PLG_FILESYSTEM_IDATA_MOUNT_PATH_LABEL"
+					description="PLG_FILESYSTEM_IDATA_MOUNT_PATH_DESC"
+					default="/srv/idata/"
+				/>
+				<field name="amqp_host"
+					type="text"
+					label="PLG_FILESYSTEM_IDATA_AMQP_HOST_LABEL"
+					description="PLG_FILESYSTEM_IDATA_AMQP_HOST_DESC"
+					default="127.0.0.1"
+				/>
+				<field name="amqp_port"
+					type="text"
+					label="PLG_FILESYSTEM_IDATA_AMQP_PORT_LABEL"
+					description="PLG_FILESYSTEM_IDATA_AMQP_DESC"
+					default="5672"
+				/>
+				<field name="amqp_user"
+					type="text"
+					label="PLG_FILESYSTEM_IDATA_AMQP_USER_LABEL"
+					description="PLG_FILESYSTEM_IDATA_AMQP_USER_DESC"
+					default="rabbitmq"
+				/>
+				<field name="amqp_password"
+					type="text"
+					label="PLG_FILESYSTEM_IDATA_AMQP_PASSWORD_LABEL"
+					description="PLG_FILESYSTEM_IDATA_AMQP_PASSWORD_DESC"
+					default="rabbitmq"
+				/>
+				<field name="amqp_exchange"
+					type="text"
+					label="PLG_FILESYSTEM_IDATA_AMQP_EXCHANGE_LABEL"
+					description="PLG_FILESYSTEM_IDATA_AMQP_EXCHANGE_DESC"
+					default="geoedf-all"
+				/>
+				<field name="amqp_queue"
+					type="text"
+					label="PLG_FILESYSTEM_IDATA_AMQP_QUEUE_LABEL"
+					description="PLG_FILESYSTEM_IDATA_AMQP_QUEUE_DESC"
+					default="geoedf-all"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

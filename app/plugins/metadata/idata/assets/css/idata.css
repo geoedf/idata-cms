@@ -1,0 +1,10 @@
+.show-hide-label {
+	float:			right;
+	font-style:		italic;
+}
+#abox-content {
+	overflow:		hidden;
+}
+#scroll-area {
+	overflow:		scroll;
+}
