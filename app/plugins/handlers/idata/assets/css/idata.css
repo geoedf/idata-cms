@@ -1,0 +1,26 @@
+/*---------------------------------------------------------------
+    Preiveiw dialog
+---------------------------------------------------------------*/
+	.width-container {
+		padding-left: 30px;
+	}
+	.title-filename {
+		font-style: italic;
+	}
+	#prj {
+		width: 60%;
+	}
+	#dbf {
+		width: 85%;
+	}
+	#map-viewer {
+		padding-left: 0px;
+		overflow: hidden;
+	}
+	.contentpane {
+		padding-bottom: 0px;
+	}
+	.oops {
+		font-style: italic;
+		font-weight: bolder;
+	}

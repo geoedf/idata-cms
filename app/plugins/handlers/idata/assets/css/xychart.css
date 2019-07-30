@@ -1,0 +1,201 @@
+<style type="text/css">
+	#toolbar {
+		position:		relative;
+		padding-bottom:	0.5em;
+		display:		none;
+	}
+	#location {
+		float:			right;
+	}
+	#options {
+		position:		absolute;
+		left:			13px;
+		top:			7px;
+		z-index:		3000;
+	}
+	#panel {
+		float:			left;
+		height:			99%;
+		width:			25%;
+		margin:			0px;
+		padding-left:	7px;
+		border-right:	2px solid lightgray;
+		border-bottom:	2px solid lightgray;
+	}
+	#inner {
+		overflow:		scroll;
+		height:			100%;
+	}
+	#chart-viewer {
+		padding-left:	0px;
+		overflow:		hidden;
+		width: 			97vw;
+	}
+	#chart {
+		float:			right;
+		height:			99%;
+		width:			74%;
+		border-bottom:	2px solid lightgray;
+		border-right:	2px solid lightgray;
+		margin:			0px;
+		color:          #444;
+	}
+	#info {
+		color:          #444;
+	}
+	input.colspec {
+		padding:		0px;
+	}
+	#csv{
+		color:          #444;
+	}
+	#layerswitcher {
+		position:		initial;
+		top:			initial;
+		right:			initial;
+		left:			initial;
+		bottom:			initial;
+		width:			initial;
+		font-family:	inherit;
+		font-weight:	inherit;
+		margin-top:		initial;
+		margin-left:	initial;
+		margin-bottom:	initial;
+		font-size:		inherit;
+		color:			inherit;
+		background-color: inherit;
+		display:block;
+	}
+	#info {
+		margin-top:		3px;
+		clear:			both;
+	}
+	#container {
+		width:			100%;
+		height:			100%;
+		padding:		5px
+	}
+	#scale-pad {
+		width:			21%;
+		float:			left;
+	}
+	#scale {
+		width:			39%;
+		float:			left;
+		text-align:		left;
+	}
+	#projection {
+		width:			30%;
+		display:		inline-block;
+		margin:			0 auto;
+		text-align:		center;
+	}
+	#loc-contain {
+		width:			39%;
+		display:		inline-block;
+		margin:			0 auto;
+		text-align:		right;
+	}
+	td.feat_prop {
+		vertical-align:	middle;
+		line-height:	1.6em;
+		padding:		1px 9px;
+		border-bottom:	0px;
+	}
+	table th, table td {
+		border:			none;
+	}
+	table tr:nth-child(odd) td.feat_prop {
+		background-color:	#ffffff;
+	}
+	table tr:nth-child(even) td.feat_prop {
+		background-color:	#eeeeee;
+	}
+	.selectedFeatures {
+		margin-bottom  : 15px;
+		margin-left    : 0px;
+		font-weight    : bold;
+		text-decoration: underline;
+	}
+	.featureList {
+		margin-top     : 10px;
+	}
+	.ui-resizable-e {
+		width          : 5px;
+		right          : 0px;
+		border-right   : 2px dotted lightgray;
+	}
+	#basepros {
+		margin-top     : 9px;
+		color          : #444;
+	}
+	#baseprostitle {
+		font-weight    : bold;
+	}
+	.basepro {
+		font-weight    : normal;
+		margin-left    : 5px;
+	}
+	.basepro:hover {
+		cursor         : pointer;
+	}
+	.sectionDiv {
+		margin-bottom   : 12px;
+	}
+	#colorlegends {
+		padding-left    : 10px;
+		padding-bottom  : 10px;
+		border-bottom   : 1px dashed #dadada;
+	}
+	.colorlabel {
+		clear           : both;
+	}
+	.colorlegend {
+		border          : 1px solid darkgray;
+		margin-left     : 10px;
+		height          : 300px;
+		width           : auto;
+	}
+	.symbollegend {
+		border          : 1px solid darkgray;
+		margin-left     : 10px;
+		height          : auto;
+		width           : auto;
+	}
+	.sign {
+		float           : right;
+		padding-right   : 15px;
+		font-style      : italic;
+		cursor          : pointer;
+	}
+	#colselect-area {
+		padding-left    : 9px;
+	}
+	.colpicker-area {
+		padding-top     : 5px;
+		padding-left    : 9px;
+		padding-right   : 9px;
+		padding-bottom  : 5px;
+	}
+	.baseLbl, .dataLbl {
+		margin-top      : 9px;
+		margin-left     : 0px;
+		padding-top     : 0px;
+		padding-left    : 5px;
+		font-weight     : bold;
+		font-size       : smaller;
+		color           : white;
+		background-color: darkgray;
+		height          : 23px;
+		cursor          : pointer;
+	}
+	.info-area {
+		padding-top     : 5px;
+		padding-left    : 9px;
+		padding-right   : 9px;
+		padding-bottom  : 5px;
+	}
+	#redraw {
+		float           : right;
+	}
+</style>
