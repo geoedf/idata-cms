@@ -1,0 +1,13 @@
+HUBZERO-CREDITS.php
+LICENSE.txt
+administrator/
+api/
+channel.phtml
+config/
+configuration.php
+core/
+favicon.ico
+hubconfiguration.php-dist
+index.php
+muse
+robots.txt.dist
